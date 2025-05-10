@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Type Form</title>
+</head>
+<body>
+    <h1>Employee Information</h1>
+    <form action="#" method="post">
+        <div>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div>
+            <h3>Employee Type:</h3>
+            <input type="radio" id="salaried" name="employeeType" value="salaried" required>
+            <label for="salaried">Salaried</label>
+            
+            <input type="radio" id="ownBusiness" name="employeeType" value="ownBusiness">
+            <label for="ownBusiness">Own Business</label>
+        </div>
+        
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>

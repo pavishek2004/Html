@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All HTML Input Types</title>
+</head>
+<body>
+    <h1>All HTML Input Types</h1>
+    
+    <form action="#" method="post">
+        <!-- Text Input -->
+        <fieldset>
+            <legend>Text Inputs</legend>
+            
+            <div>
+                <label for="text">Text:</label>
+                <input type="text" id="text" name="text" placeholder="Enter text here">
+            </div>
+            
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter password">
+            </div>
+            
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+            </div>
+            
+            <div>
+                <label for="tel">Telephone:</label>
+                <input type="tel" id="tel" name="tel" placeholder="Enter your phone number">
+            </div>
+            
+            <div>
+                <label for="url">URL:</label>
+                <input type="url" id="url" name="url" placeholder="Enter a website URL">
+            </div>
+            
+            <div>
+                <label for="search">Search:</label>
+                <input type="search" id="search" name="search" placeholder="Search...">
+            </div>
+        </fieldset>
+        
+        <!-- Numeric Inputs -->
+        <fieldset>
+            <legend>Numeric Inputs</legend>
+            
+            <div>
+                <label for="number">Number:</label>
+                <input type="number" id="number" name="number" min="0" max="100" step="1">
+            </div>
+            
+            <div>
+                <label for="range">Range:</label>
+                <input type="range" id="range" name="range" min="0" max="100" value="50">
+            </div>
+        </fieldset>
+        
+        <!-- Date and Time Inputs -->
+        <fieldset>
+            <legend>Date and Time Inputs</legend>
+            
+            <div>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+            </div>
+            
+            <div>
+                <label for="datetime-local">Date and Time:</label>
+                <input type="datetime-local" id="datetime-local" name="datetime-local">
+            </div>
+            
+            <div>
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time">
+            </div>
+            
+            <div>
+                <label for="month">Month:</label>
+                <input type="month" id="month" name="month">
+            </div>
+            
+            <div>
+                <label for="week">Week:</label>
+                <input type="week" id="week" name="week">
+            </div>
+        </fieldset>
+        
+        <!-- Selection Inputs -->
+        <fieldset>
+            <legend>Selection Inputs</legend>
+            
+            <div>
+                <label>Checkbox:</label><br>
+                <input type="checkbox" id="checkbox1" name="checkbox1" value="option1">
+                <label for="checkbox1">Option 1</label><br>
+                <input type="checkbox" id="checkbox2" name="checkbox2" value="option2">
+                <label for="checkbox2">Option 2</label>
+            </div>
+            
+            <div>
+                <label>Radio Buttons:</label><br>
+                <input type="radio" id="radio1" name="radioGroup" value="option1">
+                <label for="radio1">Option 1</label><br>
+                <input type="radio" id="radio2" name="radioGroup" value="option2">
+                <label for="radio2">Option 2</label>
+            </div>
+            
+            <div>
+                <label for="select">Select Dropdown:</label>
+                <select id="select" name="select">
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="datalist">Datalist Input:</label>
+                <input list="options" id="datalist" name="datalist">
+                <datalist id="options">
+                    <option value="Option 1">
+                    <option value="Option 2">
+                    <option value="Option 3">
+                </datalist>
+            </div>
+        </fieldset>
+        
+        <!-- Other Inputs -->
+        <fieldset>
+            <legend>Other Inputs</legend>
+            
+            <div>
+                <label for="color">Color:</label>
+                <input type="color" id="color" name="color">
+            </div>
+            
+            <div>
+                <label for="file">File:</label>
+                <input type="file" id="file" name="file">
+            </div>
+            
+            <div>
+                <label for="multipleFiles">Multiple Files:</label>
+                <input type="file" id="multipleFiles" name="multipleFiles" multiple>
+            </div>
+            
+            <div>
+                <label for="textarea">Textarea:</label><br>
+                <textarea id="textarea" name="textarea" rows="4" cols="50" placeholder="Enter your message here"></textarea>
+            </div>
+            
+            <div>
+                <input type="hidden" id="hidden" name="hidden" value="hiddenValue">
+            </div>
+        </fieldset>
+        
+        <!-- Button Inputs -->
+        <fieldset>
+            <legend>Button Inputs</legend>
+            
+            <div>
+                <input type="button" value="Regular Button">
+            </div>
+            
+            <div>
+                <input type="submit" value="Submit Button">
+            </div>
+            
+            <div>
+                <input type="reset" value="Reset Button">
+            </div>
+            
+            <div>
+                <input type="image" src="https://via.placeholder.com/100x30" alt="Image Button">
+            </div>
+            
+            <div>
+                <button type="button">Button Element</button>
+            </div>
+            
+            <div>
+                <button type="submit">Submit Button Element</button>
+            </div>
+            
+            <div>
+                <button type="reset">Reset Button Element</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

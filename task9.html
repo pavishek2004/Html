@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elements with Default Values</title>
+</head>
+<body>
+    <h1>Form Elements with Default Values</h1>
+    
+    <form action="#" method="post">
+        <!-- Text input with default value -->
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" value="JohnDoe123">
+        </div>
+        
+        <!-- Email input with default value -->
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="john.doe@example.com">
+        </div>
+        
+        <!-- Password input with default value (usually not recommended) -->
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" value="DefaultPassword123">
+        </div>
+        
+        <!-- Number input with default value -->
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" value="25" min="18" max="100">
+        </div>
+        
+        <!-- Date input with default value -->
+        <div>
+            <label for="birthdate">Birth Date:</label>
+            <input type="date" id="birthdate" name="birthdate" value="1998-05-10">
+        </div>
+        
+        <!-- Checkbox inputs with checked state -->
+        <div>
+            <label>Interests:</label><br>
+            <input type="checkbox" id="coding" name="interests" value="coding" checked>
+            <label for="coding">Coding</label><br>
+            
+            <input type="checkbox" id="reading" name="interests" value="reading">
+            <label for="reading">Reading</label><br>
+            
+            <input type="checkbox" id="sports" name="interests" value="sports" checked>
+            <label for="sports">Sports</label>
+        </div>
+        
+        <!-- Radio buttons with default selection -->
+        <div>
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male" checked>
+            <label for="male">Male</label><br>
+            
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+        </div>
+        
+        <!-- Select dropdown with default option -->
+        <div>
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="usa">United States</option>
+                <option value="canada">Canada</option>
+                <option value="uk" selected>United Kingdom</option>
+                <option value="australia">Australia</option>
+            </select>
+        </div>
+        
+        <!-- Textarea with default text -->
+        <div>
+            <label for="bio">Bio:</label><br>
+            <textarea id="bio" name="bio" rows="4" cols="50">I am a web developer with 5 years of experience in building responsive websites and applications.</textarea>
+        </div>
+        
+        <!-- Color input with default value -->
+        <div>
+            <label for="favoriteColor">Favorite Color:</label>
+            <input type="color" id="favoriteColor" name="favoriteColor" value="#4287f5">
+        </div>
+        
+        <!-- Range input with default value -->
+        <div>
+            <label for="satisfaction">Satisfaction Level (1-10):</label>
+            <input type="range" id="satisfaction" name="satisfaction" min="1" max="10" value="8">
+        </div>
+        
+        <!-- Hidden input with default value -->
+        <input type="hidden" id="userId" name="userId" value="12345">
+        
+        <!-- Submit button -->
+        <div>
+            <input type="submit" value="Submit Form">
+        </div>
+        
+        <!-- Reset button -->
+        <div>
+            <input type="reset" value="Reset Form">
+        </div>
+    </form>
+</body>
+</html>s
